@@ -2,31 +2,71 @@
     margin: 0;
     padding: 0;
     
-    /* --light-sidebar-background: #fdba74;
+    --light-sidebar-background: #fdba74;
     --light-content-background: #cffafe;
     --light-searchbar: #e5e5e5;
     --light-white-back-font-color: black;
     --light-color-back-font-color: white;
     --light-border-color: black;
-    --light-content-background-color: white; */
+    --light-content-background-color: white;
 
-    --light-sidebar-background: #1e1b4b;
-    --light-content-background: #0c0a09;
-    --light-searchbar: #71717a;
-    --light-white-back-font-color: white;
-    --light-color-back-font-color: white;
-    --light-border-color: white;
-    --light-content-background-color: #0f172a;
+    --dark-searchbar: #71717a;
+    --dark-sidebar-background: #1e1b4b;
+    --dark-content-background: #0c0a09;
+    --dark-sidebar-background: #1e1b4b;
+    --dark-white-back-font-color: white;
+    --dark-color-back-font-color: white;
+    --dark-border-color: white;
+    --dark-content-background-color: #0f172a;
 
 
     color: var(--light-white-back-font-color);
+
+}
+
+/*dark themes*/
+.dark-theme-input{
+    background: var(--dark-searchbar);
+}
+
+.dark-theme-button{
+    color: var(--dark-color-back-font-color);
+    background: var(--dark-sidebar-background);
+}
+
+.dark-theme-sidebar{
+    background-color: var(--dark-sidebar-background);
+    color: var(--dark-color-back-font-color);
+}
+
+.dark-theme-content{
+    background-color: var(--dark-content-background);
+}
+
+/*needs to be applied to 3 places*/
+.dark-theme-content-containers{
+    border-color: var(--dark-border-color);
+}
+
+.dark-theme-footer{
+    color: var(--dark-color-back-font-color);
+}
+
+/*needs to be applied to 4 places*/
+.dark-theme-container{
+    background-color: var(--dark-content-background-color);
+}
+
+/*apply in 4 places*/
+.dark-theme-filter{
+    filter: invert(99%) sepia(6%) saturate(22%) hue-rotate(221deg) brightness(105%) contrast(100%);
 }
 
 
 /*dark theme styling*/
-#search, #notification, .project-options, #night{
+/* #search, #notification, .project-options, #night{
     filter: invert(99%) sepia(6%) saturate(22%) hue-rotate(221deg) brightness(105%) contrast(100%);
-}
+} */
 
 * {
     font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
